@@ -18,6 +18,7 @@ const About = () => {
                     to thrive academically.
                 </p>
             </div>
+            
         </div>
     );
 };

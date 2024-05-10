@@ -22,6 +22,7 @@ const ProductList = () => {
                     </div>
                 ))}
             </div>
+            
         </div>
     );
 };

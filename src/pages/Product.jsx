@@ -44,7 +44,9 @@ const Product = () => {
                 <p>Standard Backpack for everyday use</p>
                 <button onClick={() => handleBuyClick("Pencils")}>Buy</button>
             </div>
+            
         </div>
+        
     );
 };
 

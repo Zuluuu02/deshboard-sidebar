@@ -2,7 +2,7 @@ import React from 'react';
 
 const Dashboard = () => {
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px', borderBottom: '1px solid #ccc' }}>
                 <h1>Dashboard</h1>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -16,7 +16,7 @@ const Dashboard = () => {
                 </div>
             </header>
 
-            <div style={{ padding: '20px' }}>
+            <div style={{ flex: '1', padding: '20px' }}>
                 <h2>Buyers</h2>
                 <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px' }}>
                     <thead>
@@ -37,6 +37,13 @@ const Dashboard = () => {
                     </tbody>
                 </table>
             </div>
+
+            <footer style={{ borderTop: '1px solid #ccc', padding: '20px', textAlign: 'center', marginTop: 'auto', backgroundColor: '#f0f0f0' }}>
+                 <p>&copy; 2024 LeSunshine Inc.</p>
+                 <p>Contact: Le@sunshine.edu</p>
+                 <p>Address: 1234 Rainy Street, Pato City</p>
+            </footer>
+
         </div>
     );
 };

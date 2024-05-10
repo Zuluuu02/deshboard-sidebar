@@ -67,6 +67,7 @@ const Admin = () => {
                     </li>
                 ))}
             </ul>
+            
         </div>
     );
 };
