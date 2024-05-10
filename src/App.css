@@ -11,7 +11,7 @@ main{
     padding: 20px;
 }
 .sidebar{
-    background: #000;
+    background: linear-gradient(#094d95, #999);
     color: #fff;
     height: 100vh;
     width: 200px;
@@ -23,6 +23,7 @@ main{
     padding:20px 15px;
 }
 .logo{
+    color: #fff;
     font-size: 30px;
 }
 .bars{
@@ -38,14 +39,101 @@ main{
     transition: all 0.5s;
 }
 .link:hover{
-    background:lightskyblue;
+    background:rgb(104, 143, 169);
     color: #000;
     transition: all 0.5s;
 }
 .active{
-    background: lightskyblue;
+    background: rgb(204, 210, 214);
     color: #000;
 }
 .icon, .link_text{
     font-size: 20px;
 }
+.product-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.item p {
+    margin-top: 0;
+    color: #666;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    margin-top: 0;
+}
+
+.product p {
+    margin-bottom: 0;
+}
+.about-container {
+    max-width: 800px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.about-content {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.about-content p {
+    font-size: 16px; 
+    line-height: 1.6; 
+}
+
+h1 {
+    color: #333; 
+}
+.profile-img {
+    width: 200px; 
+    height: 210px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+
+
+
+

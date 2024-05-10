@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import {
-    FaTh,
-    FaBars,
-    FaUserAlt,
-    FaRegChartBar,
-    FaCommentAlt,
-    FaShoppingBag,
-    FaThList
-}from "react-icons/fa";
+import { FaBars, FaShoppingBag, FaThList, FaUser } from "react-icons/fa";
+import { RiAdminFill } from "react-icons/ri";
+import { MdSpaceDashboard } from "react-icons/md";
+import { MdGroup } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
 
 
@@ -18,22 +13,22 @@ const Sidebar = ({children}) => {
         {
             path:"/",
             name:"Dashboard",
-            icon:<FaTh/>
+            icon:<MdSpaceDashboard/>
+        },
+        {
+            path:"/admin",
+            name:"Admin",
+            icon:<RiAdminFill/>
+        },
+        {
+            path:"/student",
+            name:"Student",
+            icon:<FaUser/>
         },
         {
             path:"/about",
             name:"About",
-            icon:<FaUserAlt/>
-        },
-        {
-            path:"/analytics",
-            name:"Analytics",
-            icon:<FaRegChartBar/>
-        },
-        {
-            path:"/comment",
-            name:"Comment",
-            icon:<FaCommentAlt/>
+            icon:<MdGroup/>
         },
         {
             path:"/product",
@@ -48,9 +43,9 @@ const Sidebar = ({children}) => {
     ]
     return (
         <div className="container">
-           <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
+           <div style={{width: isOpen ? "250px" : "50px"}} className="sidebar">
                <div className="top_section">
-                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
+                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">LeSunshine</h1>
                    <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
                        <FaBars onClick={toggle}/>
                    </div>
